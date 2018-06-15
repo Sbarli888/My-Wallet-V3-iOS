@@ -102,6 +102,7 @@ struct LocalizationConstants {
         static let decryptedPasswordLengthZero = NSLocalizedString("Decrypted PIN Password length 0", comment: "")
         static let validationError = NSLocalizedString("PIN Validation Error", comment: "")
         static let validationErrorMessage = NSLocalizedString("An error occurred validating your PIN code with the remote server. You may be offline or Blockchain may be experiencing difficulties. Would you like retry validation or instead enter your password manually?", comment: "")
+        static let pinsDoNotMatch = NSLocalizedString("PINs do not match", comment: "Message presented to user when they enter an incorrect pin when confirming a pin.")
     }
 
     struct Biometrics {
@@ -260,4 +261,6 @@ struct LocalizationConstants {
     @objc class func loadingTransactions() -> String { return LocalizationConstants.Exchange.loadingTransactions }
 
     @objc class func xPaymentRequest() -> String { return LocalizationConstants.ReceiveAsset.xPaymentRequest }
+
+    @objc class func pinsDoNotMatch() -> String { return LocalizationConstants.Pin.pinsDoNotMatch }
 }
